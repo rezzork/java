@@ -1,0 +1,67 @@
+import java.util.Scanner;
+
+public class DayPicker {
+
+public static void main(String[] args) {
+
+Scanner scanner = new Scanner(System.in); // Create a Scanner object
+
+System.out.print("Enter a day of the week: ");
+
+String day = scanner.nextLine(); // Read user input
+
+switch (day) {
+
+case "Monday":
+
+System.out.println("Back to work! Let's start the week strong 💪");
+
+break;
+
+case "Tuesday":
+
+System.out.println("It's Tuesday! Keep going!");
+
+break;
+
+case "Wednesday":
+
+System.out.println("Midweek already. You're doing great!");
+
+break;
+
+case "Thursday":
+
+System.out.println("Almost the weekend. Hang in there!");
+
+break;
+
+case "Friday":
+
+System.out.println("Finally Friday! 🎉 Time to relax soon.");
+
+break;
+
+case "Saturday":
+
+System.out.println("Weekend vibes! Enjoy your Saturday!");
+
+break;
+
+case "Sunday":
+
+System.out.println("Rest day. Recharge for the week ahead.");
+
+break;
+
+default:
+
+System.out.println("Not a valid day. Please check your spelling.");
+
+}
+
+scanner.close(); // Always good to close the scanner
+
+}
+
+}
