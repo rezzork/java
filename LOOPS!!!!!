@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+class Main {
+
+public static void main(String[] args) {
+
+Scanner scn = new Scanner(System.in);
+
+int[] numbers = {10, 5, 22, 7}; // simulate input
+
+int max = Integer.MIN_VALUE;
+
+int min = Integer.MAX_VALUE;
+
+for (int number : numbers) {
+
+if (number > max) max = number;
+
+if (number < min) min = number;
+
+}
+
+System.out.println("Largest number: " + max);
+
+System.out.println("Smallest number: " + min);
+
+}
+
+}
